@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Videos</title>
+    <h1>Videos Legais para Assistir</h1>
+    <style>
+      
+        body {
+            background-color: black;
+            height: 100%; /* Garante que o body e html ocupem toda a altura da tela */
+            margin: 0;
+            display: grid;
+            place-items: center; /* Centraliza os itens no grid */
+            
+        }
+        .container {         
+            display: grid;
+             grid-template-columns: repeat(2, 1fr);
+             grid-template-rows: repeat(2, 1fr);
+             gap: 20px; /* Espaçamento entre as imagens */
+             width: 50%; /* Ajuste conforme necessário */
+
+        }
+         .video {
+            width:100%;
+            height: 100%;
+            overflow: hidden; /* Evita que imagens maiores que o espaço disponível causem problemas */
+            border-radius: 8px; /* Opcional: bordas arredondadas */ flex: 1 1 calc(40% - 10px); /* 50% de largura menos o espaçamento */
+        }
+
+         .video img {   
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Redimensiona a imagem mantendo a proporção */
+}
+        .texto { 
+            color: aliceblue;
+            text-align: center;
+        }
+        
+            
+        
+    </style>
+</head>
+<body>
+        <div class="texto">
+            <h1>Videos Legais para Assistir</h1>
+        </div>
+        
+        <div class="container">
+            <div class="video">
+                <a href="hardware.html" target="_self"
+                ref="next"><img src="imagen/thumb-hardware.png" alt="Curso Hardware"></a>
+            </div>
+            <div class="video">
+                <a href="html-css.html" target="_self"
+                ref="next"><img src="imagen/thumb-html.png" alt="Curso Html e CSS"></a>
+            </div>
+           
+            <div class="video">
+                <a href="js.html" target="_self"
+                ref="next"><img src="imagen/thumb-js.png" alt="Curso Javascript"></a>
+            </div>
+            <div class="video">
+                <a href="pytho.html" target="_self"
+                ref="next"><img src="imagen/thumb-python.png" alt="Curso Python"></a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
