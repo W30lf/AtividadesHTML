@@ -1,1 +1,1 @@
-Foi pedido um site onde redireciona para outro usando HTML, utilizei um pouco de css que conheço.
+Este Diretório será usado para atualizar todo meu desenvolvimento no Front-end.
